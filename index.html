@@ -13,7 +13,6 @@
             line-height: 1.5;
         }
 
-        /* Barre de navigation style Apple */
         .navbar {
             background-color: rgba(251, 251, 253, 0.8);
             backdrop-filter: blur(20px);
@@ -35,7 +34,6 @@
             opacity: 0.8;
         }
 
-        /* Conteneur principal */
         .container {
             max-width: 700px;
             margin: 60px auto;
@@ -55,113 +53,98 @@
             margin-top: 40px;
         }
 
-        p {
-            font-size: 17px;
-            color: #1d1d1f;
-        }
-
-        .intro-text {
-            font-size: 19px;
-            font-weight: 500;
-        }
-
-        /* Encadré gris (Note) */
         .note-box {
             background-color: #f5f5f7;
             border-radius: 12px;
             padding: 20px;
             margin: 30px 0;
-            font-size: 15px;
         }
 
-        ul {
-            padding-left: 20px;
-        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; font-size: 17px; }
+        a { color: #0066cc; text-decoration: none; }
 
-        li {
-            margin-bottom: 10px;
-            font-size: 17px;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Pied de page */
+        /* Style du Pied de page amélioré */
         footer {
             background-color: #f5f5f7;
             padding: 40px 20px;
             margin-top: 80px;
             font-size: 12px;
             color: #6e6e73;
-            text-align: center;
+            text-align: left;
         }
 
-        .apple-logo {
-            font-size: 20px;
-            margin-bottom: 10px;
+        .footer-content {
+            max-width: 980px;
+            margin: 0 auto;
+            border-top: 1px solid #d2d2d7;
+            padding-top: 20px;
+        }
+
+        .footer-shop {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #d2d2d7;
+            margin-bottom: 15px;
+        }
+
+        .footer-legal {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #424245;
+            margin-right: 10px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="#">Store</a>
-        <a href="#">Mac</a>
-        <a href="#">iPad</a>
-        <a href="#">iPhone</a>
+        <a href="#">Compte Apple</a>
+        <a href="#">Se connecter</a>
+        <a href="#">Q&R</a>
         <a href="#">Support</a>
     </nav>
 
     <div class="container">
         <h1>Si vous avez oublié le mot de passe de votre compte Apple</h1>
         
-        <p class="intro-text">Voici comment réinitialiser le mot de passe de votre compte Apple et retrouver l'accès à celui-ci.</p>
-
-        <p>Le moyen le plus simple de réinitialiser votre mot de passe est d'utiliser votre iPhone ou un autre appareil Apple de confiance, déjà connecté à votre compte Apple, afin qu'Apple puisse l'identifier. Vous devez également avoir configuré un code d'accès (ou un mot de passe sur Mac) sur cet appareil.</p>
-
-        <p><a href="https://iforgot.apple.com">Réinitialiser votre mot de passe sur Internet</a> lorsque vous ne disposez pas d'un appareil de confiance est une autre façon de récupérer l'accès à votre compte.</p>
+        <p>Voici comment réinitialiser le mot de passe de votre compte Apple et retrouver l'accès à celui-ci.</p>
 
         <div class="note-box">
-            L'identifiant Apple s'appelle désormais <strong>Compte Apple</strong>. Vous pouvez toujours vous connecter avec la même adresse e-mail ou le même numéro de téléphone et le même mot de passe.
+            L'identifiant Apple s'appelle désormais <strong>Compte Apple</strong>. Vous pouvez toujours vous connecter avec la même adresse e-mail ou le même numéro de téléphone.
         </div>
 
-        <h2>Réinitialisez le mot de passe sur votre appareil de confiance</h2>
-        
-        <h3>Sur iPhone, iPad ou Apple Vision Pro :</h3>
+        <h2>Réinitialisez le mot de passe sur votre appareil</h2>
         <ul>
             <li>Allez dans les <strong>Réglages</strong>, puis appuyez sur votre nom.</li>
-            <li>Appuyez sur <strong>Connexion et sécurité</strong>, puis sélectionnez <strong>Changer le mot de passe</strong>.</li>
-            <li>Suivez les instructions à l'écran.</li>
+            <li>Appuyez sur <strong>Connexion et sécurité</strong>.</li>
+            <li>Sélectionnez <strong>Changer le mot de passe</strong>.</li>
         </ul>
 
-        <h3>Sur votre Mac :</h3>
-        <ul>
-            <li>Dans le menu Apple , choisissez <strong>Réglages système</strong>.</li>
-            <li>Cliquez sur votre nom, puis choisissez <strong>Connexion et sécurité</strong>.</li>
-            <li>Cliquez sur <strong>Changer le mot de passe</strong>.</li>
-        </ul>
-
-        <h2>Si vous ne possédez pas d'appareil de confiance</h2>
-        <p>Vous pouvez emprunter un appareil Apple à un ami ou à un membre de votre famille et utiliser l'application <strong>Assistance Apple</strong>.</p>
-        <ul>
-            <li>Ouvrez l’application Assistance Apple.</li>
-            <li>Faites défiler jusqu'à <strong>Outils d'assistance</strong>, puis appuyez sur <strong>Réinitialiser le mot de passe</strong>.</li>
-            <li>Appuyez sur <strong>« Aider quelqu'un d'autre »</strong>.</li>
-        </ul>
-
-        <p style="color: #6e6e73; font-size: 14px; margin-top: 50px;">Date de publication : 22 janvier 2026</p>
+        <p style="margin-top: 50px; color: #6e6e73;">Date de publication : 22 janvier 2026</p>
     </div>
 
     <footer>
-        <div class="apple-logo"></div>
-        <p>Copyright © 2026 Apple Inc. Tous droits réservés.</p>
-        <p>Politique de confidentialité | Conditions d'utilisation | Ventes et remboursements</p>
+        <div class="footer-content">
+            <div class="footer-shop">
+                Vous pouvez aussi faire vos achats dans un Apple Store ou chez un revendeur. Ou appeler le 0800 046 046.
+            </div>
+            <div class="footer-legal">
+                <div>Copyright © 2026 Apple Inc. Tous droits réservés.</div>
+                <div class="footer-links">
+                    <a href="#">Engagement de confidentialité</a> | 
+                    <a href="#">Cookies</a> | 
+                    <a href="#">Conditions d’utilisation</a> | 
+                    <a href="#">Ventes et remboursements</a> | 
+                    <a href="#">Mentions légales</a>
+                </div>
+                <div>France</div>
+            </div>
+        </div>
     </footer>
 
 </body>
