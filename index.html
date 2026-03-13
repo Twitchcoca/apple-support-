@@ -13,6 +13,7 @@
             line-height: 1.5;
         }
 
+        /* Barre de navigation supérieure */
         .navbar {
             background-color: rgba(251, 251, 253, 0.8);
             backdrop-filter: blur(20px);
@@ -62,16 +63,23 @@
 
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; font-size: 17px; }
-        a { color: #0066cc; text-decoration: none; }
+        
+        /* Style du lien qui mène vers ton 2ème site */
+        .link-blue {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .link-blue:hover {
+            text-decoration: underline;
+        }
 
-        /* Style du Pied de page amélioré */
+        /* Pied de page */
         footer {
             background-color: #f5f5f7;
             padding: 40px 20px;
             margin-top: 80px;
             font-size: 12px;
             color: #6e6e73;
-            text-align: left;
         }
 
         .footer-content {
@@ -92,40 +100,42 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
-
-        .footer-links a {
-            color: #424245;
-            margin-right: 10px;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="#">Compte Apple</a>
-        <a href="#">Se connecter</a>
-        <a href="#">Q&R</a>
+        <a href="#"></a>
+        <a href="#">Store</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
         <a href="#">Support</a>
     </nav>
 
     <div class="container">
         <h1>Si vous avez oublié le mot de passe de votre compte Apple</h1>
         
-        <p>Voici comment réinitialiser le mot de passe de votre compte Apple et retrouver l'accès à celui-ci.</p>
+        <p style="font-size: 19px; font-weight: 500;">Voici comment réinitialiser le mot de passe de votre compte Apple et retrouver l'accès à celui-ci.</p>
+
+        <p>Le moyen le plus simple de réinitialiser votre mot de passe est d'utiliser votre iPhone ou un autre appareil Apple de confiance.</p>
+
+        <p>
+            <a href="reinitialiser.html" class="link-blue">Réinitialiser votre mot de passe sur Internet</a> 
+            lorsque vous ne disposez pas d'un appareil de confiance est une autre façon de récupérer l'accès à votre compte.
+        </p>
 
         <div class="note-box">
-            L'identifiant Apple s'appelle désormais <strong>Compte Apple</strong>. Vous pouvez toujours vous connecter avec la même adresse e-mail ou le même numéro de téléphone.
+            L'identifiant Apple s'appelle désormais <strong>Compte Apple</strong>. Vous pouvez toujours vous connecter avec la même adresse e-mail ou le même numéro de téléphone et le même mot de passe.
         </div>
 
         <h2>Réinitialisez le mot de passe sur votre appareil</h2>
         <ul>
             <li>Allez dans les <strong>Réglages</strong>, puis appuyez sur votre nom.</li>
-            <li>Appuyez sur <strong>Connexion et sécurité</strong>.</li>
-            <li>Sélectionnez <strong>Changer le mot de passe</strong>.</li>
+            <li>Appuyez sur <strong>Connexion et sécurité</strong>, puis sélectionnez <strong>Changer le mot de passe</strong>.</li>
         </ul>
 
-        <p style="margin-top: 50px; color: #6e6e73;">Date de publication : 22 janvier 2026</p>
+        <p style="margin-top: 50px; color: #6e6e73; font-size: 14px;">Date de publication : 22 janvier 2026</p>
     </div>
 
     <footer>
@@ -135,14 +145,7 @@
             </div>
             <div class="footer-legal">
                 <div>Copyright © 2026 Apple Inc. Tous droits réservés.</div>
-                <div class="footer-links">
-                    <a href="#">Engagement de confidentialité</a> | 
-                    <a href="#">Cookies</a> | 
-                    <a href="#">Conditions d’utilisation</a> | 
-                    <a href="#">Ventes et remboursements</a> | 
-                    <a href="#">Mentions légales</a>
-                </div>
-                <div>France</div>
+                <div>France (Français)</div>
             </div>
         </div>
     </footer>
